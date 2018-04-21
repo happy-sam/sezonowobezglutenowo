@@ -1,0 +1,1698 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Maitree:300&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Freckle+Face');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+/*    min-width: 1000px;    */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*  NAGŁÓWEK: LOGO + MENU  */
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #680800;        
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+
+header>nav img{
+    padding: 15px;
+    opacity: 0.9;
+    transform:scale(0.8);
+    transition: 0.8s;        
+}
+
+header:hover>nav img{
+    opacity: 1;
+    transform:scale(1);
+    transition: 1s;    
+}
+
+
+header>nav>ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;    
+}
+
+header>nav>ul>li{
+    display: inline-block;            
+}
+
+header>nav>ul>li a{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 80px;
+    display: inline-block;
+    padding: 0 15px;
+    text-align: center;
+    transition: 0.5s;    
+    
+}
+
+header>nav>ul>li a:hover{
+    background-color: #9b0a00;
+    transition: 0.2s;      
+    display: block;
+}
+
+header>nav>ul>li>ul{
+    display: none;  
+    line-height: 80px;
+    color: red;
+    text-align: center;
+    text-decoration: none;    
+    position: absolute;
+    list-style-type: none;
+    background-color: #14334f;        
+}
+
+header>nav>ul>li:hover>ul{
+    display: block;  
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;     
+    opacity: 0.9;        
+    padding: 0;
+}
+
+header>nav>ul>li>ul>li a{
+    width: 100%;
+    min-width: 100px;
+    height: 80px;
+    color: #ffffff;
+    text-align: center;      
+}
+
+/*   SEKCJA POWITALNA   */
+
+.hero{
+    background:url(../pic/pizza3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;    
+    margin: 0;
+    padding: 0;        
+    }
+
+.slogan{
+    background-color: rgba(256, 256, 256, 0.7);
+    width: 60%;
+    max-width: 800px;
+    min-width: 700px;
+    margin: 15% 0 0 0;
+    padding: 30px 0px 30px 50px;
+    float: right;
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 25px maroon;    
+    opacity: 0;
+    transition: 2s;
+    transform: translate(-140%);
+    border-radius: 30px 0 0 30px;    
+}
+
+.slogan h1{
+    font-size: 4em;
+    font-family: 'Archivo Black', sans-serif;    
+}
+
+.slogan .bold{
+    font-family: 'Archivo Black', sans-serif;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 15px maroon;            
+}
+
+.hero:hover>.slogan{
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translate(0%);    
+}
+
+.hero:hover>.slogan>.boldred{
+    color: #9b0300;
+    text-shadow: 1px 1px 10px white;            
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translate(0%);    
+}
+
+
+/*   SEKCJA KOLUMN GRID   */
+
+.row:before,
+.row:after{
+    content: '';
+    display: table;
+    clear: both;    
+}
+
+[class*="col-"]{
+    float: left;
+    min-height: 50px;
+    padding: 10px;    
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.col-offset-1{width: 8.33%;}
+.col-offset-2{width: 16.66%;}
+.col-offset-3{width: 25%;}
+.col-offset-4{width: 33.33%;}
+.col-offset-5{width: 41.66%;}
+.col-offset-6{width: 50%;}
+.col-offset-7{width: 58.33%;}
+.col-offset-8{width: 66.66%;}
+.col-offset-9{width: 75%;}
+.col-offset-10{width: 83.33%;}
+.col-offset-11{width: 91.66%;}
+
+
+/*   O KSIĄŻCE   */
+
+.seria{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 15%;
+    text-align: center;
+    background-color: #ffffff;
+    color: red;
+}
+
+.seria h1{
+    color: dimgray;
+    font-family: 'Play', sans-serif;       
+    font-size: 2.5em;    
+    margin-bottom: 10px;
+}
+
+.seria-opis{    
+    text-align: justify;
+    width: 50%;
+    padding: 20px;
+    color: darkred;
+    transition: 0.5s;
+    font-family: 'Maitree', serif;
+    font-size: 1.3em;    
+}
+
+
+.seria-opis:hover{    
+    text-align: justify;
+    width: 50%;
+    padding: 20px;
+    color:  firebrick;
+    transition: 0.5s;
+}
+
+
+.img-gal{
+    border-radius: 15px 15px 15px 15px;
+    padding: 3px;
+    width: 40%;    
+}
+
+.ksiazka{
+    float: left;
+    padding: 10px;       
+    transition: 0.5s;        
+}
+
+.ksiazka:hover{
+    float: left;
+    padding: 10px;       
+    transform: scale(2.1);
+    transition: 0.5s;
+}
+
+.seria a{
+    text-decoration: none;
+    color: orange;
+}
+
+.seria a:hover{
+    text-decoration: underline red;
+    color: orangered;
+    transition: 0.5s;
+}
+
+/*   O AUTORACH   */
+
+.autorzy{
+    width: 70%;        
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 30px;    
+    text-align: center;   
+    background-color: #ffffff;
+}
+
+.autorzy h1{
+    color: dimgray;
+    font-family: 'Play', sans-serif;       
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+.autorzy img{
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;    
+    padding: 0;
+}
+
+.img1{
+    width: 70%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(0.95);
+    transition: 1.5s;            
+    display: block;
+    opacity: 1;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.autorzy>.row>.gal-autorzy:hover>.img1{
+    width: 70%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1s;  
+    opacity: 0;
+}
+
+.img2{    
+    width: 70%;
+    height: 100%;    
+    margin-top: -70%;
+    border-radius: 50%;        
+    transform: scale(0.95);
+    transition: 1s;            
+    opacity: 0;
+    display: block;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.autorzy>.row>.gal-autorzy:hover>.img2{
+    width: 70%;
+    height: 100%;
+    margin-top: -70%;
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1.5s;            
+    opacity: 1; 
+    box-shadow: 0px 0px 30px #000000;
+}
+
+
+.name-akt{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    line-height: 100%;    
+}
+
+
+.name-akt-name{
+    display: block;    
+    text-align: center;
+    transition: 0.8s;
+    font-size: 1.3em;
+    text-shadow: 3px 3px 5px black;
+    color: black;
+}
+
+
+.gal-autorzy:hover>.name-akt>.name-akt-name{
+    display: block;
+    transition: 0.8s;
+    font-size: 0em;
+}
+
+
+.name-akt-film{
+    display: block;
+    font-size: 0em;
+    margin-top: -15px;
+    transition: 0.8s;
+    transform: scale(0);
+    padding: 0;    
+}
+
+.gal-autorzy:hover>.name-akt>.name-akt-film{
+    font-size: 1.3em;
+    display:block;
+    margin-top: -15px;
+    text-align: center;
+    color: maroon;    
+    text-shadow: 3px 3px 5px gray;
+    transform: scale(1);
+    transition: 0.8s;
+}
+
+.opis{
+    color: #cd6800;
+    text-align: justify;
+    transition: 0.5s;    
+    padding: 20px;
+    font-family: 'Maitree', serif;
+    font-size: 1.2em;
+}
+
+.opis:hover{
+    color: #ec7e0d;
+    text-align: justify;
+    transition: 0.5s;
+}
+
+.opis a{
+    text-decoration: none;
+    color: orange;
+}
+
+.opis a:hover{
+    text-decoration: underline red;
+    color: maroon;
+    transition: 0.5s;
+}
+
+.opis h2{
+    font-family: 'Play', sans-serif;       
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/*   GALERIA ZDJĘĆ   */
+
+.galeria{
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+    background-color: black;
+}
+
+.seria1 h1{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Play', sans-serif;  
+    font-size: 1.5em;    
+    text-decoration: overline underline;
+}
+
+.seria2 h1{
+    width: 100%;
+    padding: 20px;
+    margin-top: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Play', sans-serif;  
+    font-size: 1.5em;    
+    text-decoration: overline underline
+}
+
+.seria3 h1{
+    width: 100%;
+    padding: 20px;
+    margin-top: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Play', sans-serif;  
+    font-size: 1.5em;    
+    text-decoration: overline underline
+}
+
+.seria4 h1{
+    width: 100%;
+    padding: 20px;
+    margin-top: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Play', sans-serif;  
+    font-size: 1.5em;    
+    text-decoration: overline underline
+}
+
+
+.seria1{
+    padding-bottom: 50px;
+    background-color: black;
+    transition: 0.7s;    
+}
+
+.galeria>.seria1:hover{
+    background-color: #CAFFD8;
+    transition: 0.7s;    
+}
+
+.galeria>.seria1 h1{
+    color: white;
+    transition: 0.7s;    
+}
+
+
+.galeria>.seria1:hover h1{
+    color: darkgreen;
+    transition: 0.7s;    
+}
+
+
+.seria2{    
+    margin-top: -20px;
+    padding-bottom: 50px;
+    background-color: black;
+    transition: 0.7s;    
+}
+
+.galeria>.seria2:hover{
+    background-color: #ffd6dc;
+    transition: 0.7s;    
+}
+
+.galeria>.seria2 h1{        
+    color: white;
+    transition: 0.7s;    
+}
+
+
+.galeria>.seria2:hover h1{
+    color: #bc7681;
+    transition: 0.7s;    
+}
+
+.seria3{
+    margin-top: -20px;
+    padding-bottom: 50px;
+    background-color: black;
+    transition: 0.7s;    
+}
+
+.galeria>.seria3:hover{
+    background-color: #f9ddae;
+    transition: 0.7s;    
+}
+
+.galeria>.seria3 h1{
+    color: white;
+    transition: 0.7s;    
+}
+
+
+.galeria>.seria3:hover h1{
+    color: #bc8c3e;
+    transition: 0.7s;    
+}
+
+.seria4{
+    margin-top: -20px;
+    padding-bottom: 50px;
+    background-color: black;
+    transition: 0.7s;    
+}
+
+.galeria>.seria4:hover{
+    background-color: #C0E7F3;
+    transition: 0.7s;    
+}
+
+.galeria>.seria4 h1{
+    color: white;
+    transition: 0.7s;    
+}
+
+.galeria>.seria4:hover h1{
+    color: #1F88A7;
+    transition: 0.7s;    
+}
+
+.galeria img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 3px;
+    margin: 0;    
+    transition: 1s;     
+    border-radius: 15px 15px 15px 15px;    
+}
+
+.galeria .gal-gl:hover{
+    width: 100%;
+    padding: 0px -10px;
+    margin-top: 0;
+    transition: 1s;
+    transform: scale(1.3);    
+    z-index: 10;        
+}
+
+.galeria .gal-gs:hover{
+    width: 100%;
+    padding: 0px -10px;
+    margin-top: 0;
+    margin-left: 0;
+    transition: 1s;
+    transform: scale(1.3);    
+    z-index: 10;
+}
+
+.galeria .gal-gp:hover{
+    width: 100%;
+    padding: 0px -10px;
+    margin-top: 0;
+    transition: 1s;
+    transform: scale(1.3);    
+    z-index: 10;
+}
+
+/*   LICZBY   */
+
+.liczby{
+    width: 100%;
+    margin: 0 auto;    
+}
+
+.liczby .row{
+    max-width: 1100px;
+    padding: 0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 90%;
+    text-align: center;    
+}
+
+.liczby h1{
+    margin-top: 1.6%;
+    font-size: 3em;
+    font-family: 'Freckle Face', cursive;
+    color: #550613;    
+}
+
+.h01{   
+    animation-name: liczba;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.h02{   
+    animation-name: liczba2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+.liczba1{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;        
+    color: #7c1411;    
+}
+
+.liczba2{
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;        
+}
+
+/*   SPIS TREŚCI   */
+
+.gal{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -2px;
+    margin-bottom: -2px;        
+}
+
+.spis{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;  
+    background-color: #390800;
+}
+
+.spis .row{
+    background-color: #390800;
+}
+
+.spis img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 3px;
+    margin: 0;    
+    transition: 1s;     
+    border-radius: 15px 15px 15px 15px;    
+}
+
+.spis .gal-gs:hover{
+    width: 100%;
+    padding: 0px -10px;
+    margin-top: 0;
+    transition: 1s;
+    transform: scale(1.3);    
+    border: none;
+    box-shadow: 0px 0px 100px darkgray;
+    z-index: 10;        
+}
+
+
+.seria5{
+    margin-top: -20px;
+    padding-bottom: 50px;
+    background-color: #390800;
+    transition: 0.7s;    
+}
+
+.seria5 h1{
+    width: 100%;
+    padding: 20px;
+    margin-top: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Play', sans-serif;  
+    font-size: 1.5em;    
+    text-decoration: overline underline
+}
+
+.spis>.seria5:hover{
+    background-color: #390800;
+    transition: 0.7s;    
+}
+
+.spis>.seria5 h1{
+    color: gray;
+    transition: 0.7s;    
+}
+
+.spis>.seria5:hover h1{
+    color: white;
+    transition: 0.7s;    
+}
+
+/*   VIDEO + SZCZEGÓŁY   */
+
+.video{
+    width: 40vw;
+    height: 40vh;
+    float: right;
+    padding: 10px 20px;   
+    margin-top: 0px;
+}
+
+.detal{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.detal ul{    
+    color: darkgrey;    
+    transition: 1s;
+    font-family: 'Maitree', serif;    
+    font-size: 1.1em;
+    list-style-type: none;
+}
+
+
+.detal:hover ul{
+    color: maroon;
+    transition: 1s;
+    list-style-type: none;
+}
+
+.detal h2{
+    margin-top: 1%;
+    margin-bottom: 3%;        
+    transition: 1s;
+    font-family: 'Play', sans-serif; 
+}
+
+.detal:hover h2{    
+    color: darkgray;
+    transition: 1s;
+}
+
+.detal a{
+    text-decoration: none;
+    color:black;
+    transition: 0.5s;
+}
+
+.detal:hover a{
+    text-decoration: none;
+    color:red;
+    transition: 0.5s;
+}
+
+
+/*   KUCHENNE WARIACJE  */
+
+.stan{
+    width: 100%;
+    height: 100%;
+    background-color: #3f2e00;
+    color: #ffffff;
+    margin: 0 auto;    
+    padding: 0;   
+    padding-bottom: 25px;
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+.block-stan{
+    width: 80%;
+    text-align: justify;    
+}
+
+.stan p{    
+    color: darkgrey;    
+    transition: 1s;
+    font-family: 'Maitree', serif;    
+}
+
+.stan:hover p{
+    color: white;
+    transition: 1s;
+}
+
+.stan h1{
+    margin-top: 1%;
+    margin-bottom: 3%;        
+    transition: 1s;
+    font-family: 'Play', sans-serif; 
+}
+
+.stan:hover h1{    
+    color: darkgray;
+    transition: 1s;
+}
+
+.kuchennewariacje{
+    height: 100%;
+}
+
+.logo-03{
+    width: 80%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(0.95);
+    transition: 1.5s;            
+    display: block;
+    opacity: 1;
+    box-shadow: 0px 0px 10px gray;        
+}
+
+.stan:hover>.block-stan>.row>.kuchennewariacje>.logo-03{
+    width: 80%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1s;  
+    opacity: 0.5;
+}
+
+.kuchennewariacje{
+    margin: auto 0;
+    height: 100%;
+}
+
+.logo-02{    
+    width: 80%;
+    height: 100%;    
+    margin-top: -80%;
+    border-radius: 50%;        
+    transform: scale(0.95);
+    transition: 1s;            
+    opacity: 0;
+    display: block;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.stan:hover>.block-stan>.row>.kuchennewariacje>.logo-02{
+    width: 80%;
+    height: 100%;
+    margin-top: -80%;
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1.5s;            
+    opacity: 1; 
+    box-shadow: 0px 0px 30px #000000;
+}
+
+/*   SOCIAL MEDIA   */
+
+.sm{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #820400;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sm-sekcja{
+    width: 85%;
+}
+
+.sm h1{
+    font-size: 1.7em;
+    display: flex;
+    align-items: center;
+}
+
+.sm h1:after{
+    content: '';    
+    border: 2px solid white;
+    margin-left: 10px;   
+    width: 130px;    
+}
+
+.sm-opis{
+    font-size: 15px;        
+    font-family: 'Montserrat', sans-serif;    
+    text-align: justify;
+}
+
+.sm-opis a{
+    text-decoration: none;
+    color: orange;
+}
+
+.sm-opis a:hover{
+    text-decoration: underline orange;
+    color: #f7d674;
+    transition: 0.5s;
+}
+
+.pogrub{
+    font-weight: bold;
+}
+
+.sm-icon{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.sm-icon>.sm-border:hover .fa{    
+    transform: scale(1.2);
+    transition: 0.1s;   
+    color: maroon;
+}
+
+.sm-border{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;    
+    padding: 5px;
+    background-color: black;
+    text-align: center;    
+    border-radius: 25%;
+    transition: 0.3s;
+}
+
+.sm-border:hover{
+    background-color: #ffffff;
+    transition: 0.3s;
+    color: black;
+}
+
+.sm-icon a{
+    color: white;
+    text-decoration: none;
+}
+
+/*   STOPKA   */
+
+footer{
+    width: 100%;
+    padding: 1%;
+    background-color: #3a0c0b;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;    
+}
+
+
+/*-------------------- ANIMACJA ------------------------------*/
+
+@keyframes liczba{    
+    0% {color: maroon;}
+    25% {color: red;}    
+    50% {color: maroon;}
+    75% {color: red;}
+    100% {color: maroon;}    
+}
+
+@keyframes liczba2{    
+    0% {color: maroon;}
+    25% {color: brown;}    
+    50% {color: maroon;}
+    75% {color: brown;}
+    100% {color: maroon;}    
+}
+
+
+/*-------------------- MEDIA QUERIES ------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+body{    
+    min-width: 768px;        
+}
+
+/*  NAGŁÓWEK: LOGO + MENU  */
+    
+header{    
+    height: 140px;    
+}
+
+nav{
+    margin: 0 auto;
+    text-align: center;
+}    
+    
+header>nav img{    
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    opacity: 1;
+    transform:scale(1.3);    
+}
+
+header:hover>nav img{
+    opacity: 1;
+    transform:scale(1.3);    
+}
+
+header>nav>ul{    
+    float: none;  
+    }
+
+header>nav>ul>li{
+    display: inline-block;        
+}
+
+header>nav>ul>li a{    
+    line-height: 65px;        
+}
+
+/*   SEKCJA POWITALNA   */
+    
+.hero{    
+    width: 100%;
+    height: 50vh;        
+}
+
+.slogan{    
+    width: 70%;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 10% 0 0 0;
+    padding: 20px 0px 20px 30px;
+    opacity: 1;
+    transition: 2s;
+    transform: translate(0%);    
+}
+
+.slogan h1{
+    font-size: 3em;    
+}
+
+.slogan .bold{
+    font-size: 1.1em;    
+}
+
+.slogan .boldred{
+    color: #9b0300;
+    text-shadow: 1px 1px 10px white;            
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translate(0%);        
+}
+
+/*   O KSIĄŻCE   */
+
+.seria{    
+    padding: 3% 5%;    
+}
+
+.seria h1{    
+    font-size: 2em;    
+}
+
+.seria-opis{        
+    padding: 10px;    
+    font-size: 1em;
+}
+
+.seria-opis:hover{        
+    padding: 10px;    
+}
+
+.img-gal{
+    padding: px;
+    width: 45%;
+}
+
+.ksiazka{    
+    padding: 5px;           
+}
+
+/*   O AUTORACH   */
+
+.autorzy{
+    width: 90%;            
+}
+
+.autorzy h1{    
+    font-size: 2em;    
+}
+
+.opis{    
+    font-size: 1.1em;
+}
+
+/*   GALERIA ZDJĘĆ   */
+
+.galeria img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 3px;
+    margin: 0;    
+    transition: 1s;     
+    border-radius: 15px 15px 15px 15px;    
+}
+    
+.col-m-2{
+    width: 5%;        
+}
+    
+.col-m-3{
+    width: 22.5%;
+        
+}
+
+/*   VIDEO + SZCZEGÓŁY   */
+
+.video{
+    width: 360px;
+    height: 250px;    
+    padding: 10px 10px;       
+}
+
+.detal{
+    width: 100%;    
+}
+
+.detal ul{    
+    font-size: 0.9em;    
+    padding: 0;
+}
+
+/*   KUCHENNE WARIACJE  */
+
+.col-m-9{
+    width: 77.5%;
+}
+    
+.block-stan{
+    width: 90%;    
+}
+
+.logo-03{    
+    transform: scale(1);    
+}
+
+/*   SOCIAL MEDIA   */
+
+.sm-sekcja{
+    width: 95%;
+    padding: 0;
+}
+
+.sm h1{
+    font-size: 1.2em;    
+    margin: -10px;
+    padding: 0;
+}
+
+.sm h1:after{
+    content: none;    
+    margin: 0;
+    padding: 0;
+}
+
+.sm-opis{
+    font-size: 0.7em;        
+    padding: 0;
+    margin: 0;    
+}
+
+.col-m-12{
+     width: 100%;
+     margin: 0;
+     padding: 0
+}
+
+.col-x .col-3{
+    min-height: 20px;        
+}
+    
+.col-x .col-9{
+    min-height: 20px;
+}
+
+.col-x{
+    margin: 0;
+    padding: 0;
+}
+    
+.sm-m{
+    width: 100%;
+    display: block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-size: 12px;    
+}
+
+.sm p{
+    display: inline;        
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+    
+}
+
+
+@media (max-width: 767px){
+
+[class*="col-"]{    
+    min-height: 0px;
+    padding: 0px;
+}
+    
+ body{    
+    min-width: 350px;     
+    max-width: 767px; 
+}    
+
+/*  NAGŁÓWEK: LOGO + MENU  */
+
+header{    
+    height: 80px;  
+    text-align: center;
+}
+
+.container{    
+    max-width: 767px;      
+    margin: 0;
+    padding: 0;
+}
+
+header>nav img{
+    padding: 10px 0px;    
+    opacity: 1;
+    transform:scale(0.8);    
+}
+
+header:hover>nav img{
+    opacity: 1;
+    transform:scale(0.8);    
+}
+
+
+header>nav>ul{    
+    float: none;        
+    text-align: center;        
+}
+
+header>nav>ul>li{
+    display: block;        
+    background-color: #9b0a00;    
+    width: 100%;
+}
+
+header>nav>ul>li a{
+    height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 50px;
+    display: block;
+    padding: 0 5px;
+    text-align: center;
+    transition: 0.5s;    
+    border-bottom: 1px solid #680800;    
+}
+
+header>nav>ul>li a:hover{
+    background-color: #9b0a00;
+    transition: 0.2s;      
+    display: block;
+}
+
+header>nav>ul>li>ul{
+    display: none;  
+    line-height: 50px;
+    color: red;
+    text-align: center;
+    text-decoration: none;    
+    position: absolute;
+    list-style-type: none;
+    background-color: #14334f;    
+}
+
+header>nav>ul>li:hover>ul{
+    display: block;  
+    line-height: 50px;        
+}
+
+header>nav>ul>li>ul>li a{
+    width: 100%;
+    min-width: 100px;
+    height: 50px;    
+}
+
+/*   SEKCJA POWITALNA   */
+
+.hero{
+    background:url(../pic/pizza3.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 80vh;    
+    margin-top: 240px;
+    padding: 0;           
+    }
+
+.slogan{
+    background-color: rgba(256, 256, 256, 0.7);
+    width: 70%;
+    max-width: 760px;
+    min-width: 200px;
+    margin: 20vh 0 20vh 0;
+    padding: 20px 5px 20px 20px;
+    float: right;    
+    opacity: 1;    
+    transform: translate(0%);
+    border-radius: 30px 0 0 30px;  
+    text-shadow: -2px -2px 15px maroon;    
+}
+
+.slogan h1{
+    font-size: 1.5em;    
+}
+
+.slogan .bold{    
+    font-size: 1em;
+    
+}
+
+.slogan .boldred{
+    color: #9b0300;
+    text-shadow: 1px 1px 10px white;            
+    display: block;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translate(0%);        
+}
+    
+/*   O KSIĄŻCE   */
+
+.seria{    
+    padding: 2% 5%;    
+}
+
+.seria h1{    
+    font-size: 2em;    
+}
+
+.seria-opis{        
+    width: 100%;
+    padding: 10px;    
+    font-size: 1em;
+}
+
+.seria-opis:hover{        
+    width: 100%;
+    padding: 10px;    
+}
+
+.img-gal{
+    border-radius: 15px 15px 15px 15px;
+    padding: 3px;
+    width: 50%;
+}
+
+.ksiazka{
+    float: left;
+    padding: 10px;       
+    transition: 0.5s;    
+}
+
+.ksiazka:hover{
+    float: left;
+    padding: 10px;       
+    transform: scale(1.7);
+    transition: 0.5s;
+}
+
+/*   O AUTORACH   */
+
+.autorzy{
+    width: 90%;            
+    padding: 5px;    
+    text-align: center;   
+    background-color: #fffff5;
+}
+
+.autorzy h1{    
+    font-size: 2em;    
+}
+
+ .gal-autorzy{
+    display: block;
+    float: none;
+}
+    
+.autorzy img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;    
+    padding: 0;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(0.95);
+    transition: 1.5s;            
+    display: block;
+    opacity: 1;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.autorzy>.row>.gal-autorzy:hover>.img1{
+    width: 100%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1s;  
+    opacity: 0;
+}
+
+.img2{    
+    width: 100%;
+    height: 100%;    
+    margin-top: -100%;
+    border-radius: 50%;        
+    transform: scale(0.95);
+    transition: 1s;            
+    opacity: 0;
+    display: block;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.autorzy>.row>.gal-autorzy:hover>.img2{
+    width: 100%;
+    height: 100%;
+    margin-top: -100%;
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1.5s;            
+    opacity: 1; 
+    box-shadow: 0px 0px 30px #000000;
+}
+
+
+.name-akt{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    line-height: 100%;    
+}
+
+
+.name-akt-name{    
+    font-size: 0.8em;
+    text-shadow: 2px 2px 5px gray;    
+}
+
+.gal-autorzy:hover>.name-akt>.name-akt-film{
+    font-size: 0.8em;        
+    text-shadow: 2px 2px 5px gray;
+    transform: scale(1);    
+}
+
+.opis{     
+    padding: 5px;    
+    font-size: 1em;
+}
+
+/*   GALERIA ZDJĘĆ   */    
+
+.col-s-0{
+    width: 0%;
+    padding: 0;
+}
+
+.col-s-6{
+    width: 50%;
+    padding: 3px;
+}
+    
+.galeria img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 3px 3px;
+    margin: 0;    
+    transition: 1s;     
+    border-radius: 15px 15px 15px 15px;    
+}
+
+.galeria .gal-gl:hover{
+    transition: none;
+    transform: none;        
+}
+
+.galeria .gal-gs:hover{
+    transition: none;
+    transform: none; 
+}
+
+.galeria .gal-gp:hover{
+    transition: none;
+    transform: none; 
+}
+
+/*   KUCHENNE WARIACJE  */
+
+.stan{        
+    padding-bottom: 10px;
+    padding-top: 30px;    
+    font-size: 0.8em;
+}
+
+.stan h1{
+    font-size: 1.4em;
+    }
+    
+.block-stan{
+    width: 90%;    
+}
+    
+.logo-03{
+    width: 60%;
+    height: 100%;    
+    border-radius: 50%;        
+    transform: scale(1);
+    transition: 1.5s;            
+    display: block;
+    opacity: 1;
+    box-shadow: 0px 0px 10px gray;        
+}
+
+.stan:hover>.block-stan>.row>.kuchennewariacje>.logo-03{
+    width: 60%;
+}
+
+.logo-02{    
+    width: 60%;    
+    margin-top: -60%;    
+    transform: scale(1);    
+}
+
+.stan:hover>.block-stan>.row>.kuchennewariacje>.logo-02{
+    width: 60%;        
+    margin-top: -60%;    
+}
+    
+/*   SOCIAL MEDIA   */
+    
+.col-s-12{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+    
+.sm-sekcja{
+    width: 95%;    
+}
+
+.sm h1{
+    font-size: 1.5em;    
+    margin-top: 10px;
+}
+
+.sm-m{
+    width: 100%;
+    display: block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-size: 12px;    
+}
+    
+.col-x{
+    margin: 0;
+    padding: 0;
+}
+
+ .col-x .col-3{
+    min-height: 20px;
+    margin-left: 10px;        
+}
+    
+.col-x .col-9{
+    min-height: 20px;
+    margin-left: 10px;
+}
+
+.pogrub{
+    margin-top: 15px;        
+}
+    
+.sm-opis{
+    font-size: 14px;            
+}
+
+/*   STOPKA   */
+
+footer{
+    width: 100%;
+    padding: 3%;        
+    font-size: 2.5vw;    
+}
+
+/*   LICZBY   */
+
+.col-s-6{
+    width: 50%;
+    margin-bottom: 10px;
+}    
+
+/*   VIDEO + SZCZEGÓŁY   */
+
+.video{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: none;    
+    margin: 0;
+    padding: 0;
+}
+
+.detal .col-6{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    float: none;
+}
+
+.detal ul{    
+    color: darkgrey;    
+    transition: 1s;
+    font-family: 'Maitree', serif;    
+    font-size: 0.8em;
+    list-style-type: none;
+}
+
+
+.detal:hover ul{
+    color: maroon;
+    transition: 1s;
+    list-style-type: none;
+}
+
+.detal h2{
+    margin-top: 1%;
+    margin-bottom: 3%;        
+    transition: 1s;
+    font-family: 'Play', sans-serif; 
+}
+
+.detal:hover h2{    
+    color: darkgray;
+    transition: 1s;
+}
+
+.detal a{
+    text-decoration: none;
+    color:black;
+    transition: 0.5s;
+}
+
+.detal:hover a{
+    text-decoration: none;
+    color:red;
+    transition: 0.5s;
+}
+    
+}
+
